@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PetroPal – Fuel Delivered to You</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">⛽</span>
+        <span>Petro<span class="accent">Pal</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <button class="btn btn-ghost btn-login" id="openLoginBtn" style="padding:10px 22px;font-size:14px;gap:6px;"><i class="fas fa-user"></i> Login</button>
+        <a href="#order" class="btn btn-primary">Order Fuel Now</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-badge"><span class="pulse-dot"></span> On-Demand Fuel Delivery · 24/7</div>
+      <h1 class="hero-title">
+        Never Run<br/>
+        <span class="outline-text">Out of</span><br/>
+        Fuel Again.
+      </h1>
+      <p class="hero-desc">Petrol, diesel or gasoline — delivered to your car wherever you are. Stranded on a highway? Planning a trip? We've got your tank covered in minutes.</p>
+      <div class="hero-actions">
+        <a href="#order" class="btn btn-primary btn-lg"><i class="fas fa-bolt"></i> Order Now</a>
+        <a href="#how-it-works" class="btn btn-ghost btn-lg">See How It Works <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">30<span class="accent">min</span></span><span class="stat-label">Avg. Delivery</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">50<span class="accent">k+</span></span><span class="stat-label">Happy Drivers</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">24<span class="accent">/7</span></span><span class="stat-label">Always Available</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="fuel-card">
+        <div class="fuel-card-header">
+          <span class="fuel-type">PETROL · 95 RON</span>
+          <span class="fuel-eta"><i class="fas fa-clock"></i> 28 min</span>
+        </div>
+        <div class="fuel-map">
+          <div class="map-road"></div>
+          <div class="map-truck">🚛</div>
+          <div class="map-pin">📍</div>
+          <div class="map-pulse-ring"></div>
+        </div>
+        <div class="fuel-card-footer">
+          <span>📍 Your current location</span>
+          <span class="live-tag"><span class="live-dot"></span> LIVE</span>
+        </div>
+        <div class="fuel-progress">
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <span>Driver dispatched · Arriving soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUSTED -->
+  <section class="trusted">
+    <div class="container">
+      <p class="trusted-label">Trusted by drivers and fleets across the country</p>
+      <div class="trusted-logos">
+        <span>🏢 FleetCo</span><span>🚗 RideNow</span><span>📦 QuickDeliver</span>
+        <span>🏗️ BuildMax</span><span>🚌 CityBus Corp</span><span>🛻 TruckPro</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Deliver</span>
+        <h2 class="section-title">Our Fuel <span class="accent">Services</span></h2>
+        <p class="section-desc">Premium quality fuels, certified and safe — delivered right to your vehicle wherever it is.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon" style="background:linear-gradient(135deg,#ff6b35,#f7931e)"><i class="fas fa-fire"></i></div>
+          <h3>Petrol Delivery</h3>
+          <p>High-octane petrol delivered to your exact GPS location. Perfect for cars, bikes and light vehicles.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> 91, 95 &amp; 97 RON available</li>
+            <li><i class="fas fa-check"></i> Sealed safety containers</li>
+            <li><i class="fas fa-check"></i> Spill-free nozzle system</li>
+          </ul>
+          <a href="#order" class="service-link">Order Petrol <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card featured">
+          <div class="featured-badge">Most Popular</div>
+          <div class="service-icon" style="background:linear-gradient(135deg,#1a1a2e,#16213e)"><i class="fas fa-truck"></i></div>
+          <h3>Diesel Delivery</h3>
+          <p>Industrial-grade diesel for trucks, generators, construction equipment and diesel-engine cars.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> B5, B10 &amp; Euro 5 Diesel</li>
+            <li><i class="fas fa-check"></i> Bulk &amp; standard orders</li>
+            <li><i class="fas fa-check"></i> Generator top-ups</li>
+          </ul>
+          <a href="#order" class="service-link">Order Diesel <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" style="background:linear-gradient(135deg,#11998e,#38ef7d)"><i class="fas fa-leaf"></i></div>
+          <h3>Gasoline Delivery</h3>
+          <p>Regular, mid-grade and premium gasoline for vehicles, boats and power equipment.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Regular 87, Mid 89, Premium 93</li>
+            <li><i class="fas fa-check"></i> E10 &amp; E15 ethanol blends</li>
+            <li><i class="fas fa-check"></i> Marine-grade available</li>
+          </ul>
+          <a href="#order" class="service-link">Order Gasoline <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" style="background:linear-gradient(135deg,#667eea,#764ba2)"><i class="fas fa-calendar-check"></i></div>
+          <h3>Scheduled Refueling</h3>
+          <p>Set up a recurring delivery schedule. Wake up to a full tank every morning without lifting a finger.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Daily / weekly plans</li>
+            <li><i class="fas fa-check"></i> Fleet management</li>
+            <li><i class="fas fa-check"></i> Auto-billing</li>
+          </ul>
+          <a href="#order" class="service-link">Setup Schedule <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" style="background:linear-gradient(135deg,#f093fb,#f5576c)"><i class="fas fa-exclamation-triangle"></i></div>
+          <h3>Emergency Rescue</h3>
+          <p>Stranded on the highway? Our rapid-response team reaches you within 30 minutes anywhere.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Priority dispatch</li>
+            <li><i class="fas fa-check"></i> Highway &amp; remote areas</li>
+            <li><i class="fas fa-check"></i> 24/7 availability</li>
+          </ul>
+          <a href="#order" class="service-link">SOS Request <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" style="background:linear-gradient(135deg,#4facfe,#00f2fe)"><i class="fas fa-building"></i></div>
+          <h3>Fleet &amp; Corporate</h3>
+          <p>Custom plans for businesses with vehicle fleets. Centralized billing, reports &amp; dedicated support.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Dedicated account manager</li>
+            <li><i class="fas fa-check"></i> Monthly invoicing</li>
+            <li><i class="fas fa-check"></i> Volume discounts</li>
+          </ul>
+          <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Simple &amp; Fast</span>
+        <h2 class="section-title">How <span class="accent">PetroPal</span> Works</h2>
+        <p class="section-desc">Four steps to a full tank — no pump, no queue, no hassle.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <div class="step-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h3>Share Your Location</h3>
+          <p>Open the app or website, allow location access or type your address. We'll find you wherever you are — highway, parking lot or home.</p>
+        </div>
+        <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <div class="step-icon"><i class="fas fa-gas-pump"></i></div>
+          <h3>Choose Fuel &amp; Quantity</h3>
+          <p>Pick your fuel type, select the quantity you need and add any special instructions for our driver.</p>
+        </div>
+        <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <div class="step-icon"><i class="fas fa-credit-card"></i></div>
+          <h3>Pay &amp; Track</h3>
+          <p>Pay securely online via card, wallet or UPI. Track your fuel truck in real-time on the map as it heads to you.</p>
+        </div>
+        <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="step">
+          <div class="step-number">04</div>
+          <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+          <h3>Get Fueled Up!</h3>
+          <p>Our certified driver arrives, fills your tank safely and you're back on the road with a digital receipt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER FORM -->
+  <section class="order-section" id="order">
+    <div class="container">
+      <div class="order-wrapper">
+        <div class="order-info">
+          <span class="section-tag">Quick Order</span>
+          <h2>Order <span class="accent">Right Now</span></h2>
+          <p>Fill in the form and we'll have a driver heading your way in minutes. Available 24/7, 365 days a year.</p>
+          <div class="order-perks">
+            <div class="perk"><i class="fas fa-shield-alt"></i> Safe &amp; Certified Delivery</div>
+            <div class="perk"><i class="fas fa-lock"></i> Secure Payment</div>
+            <div class="perk"><i class="fas fa-headset"></i> Live Support</div>
+            <div class="perk"><i class="fas fa-receipt"></i> Digital Receipt</div>
+          </div>
+        </div>
+        <form class="order-form" id="orderForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="John Smith" required />
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="+91 98765 43210" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Delivery Location</label>
+            <div class="input-icon-wrap">
+              <i class="fas fa-map-marker-alt input-icon-left"></i>
+              <input type="text" placeholder="Enter your address or use GPS" required class="input-with-icon" />
+              <button type="button" class="gps-btn" title="Use current location"><i class="fas fa-crosshairs"></i></button>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Fuel Type</label>
+              <select required>
+                <option value="">Select fuel type</option>
+                <option>Petrol (91 RON)</option>
+                <option>Petrol (95 RON)</option>
+                <option>Petrol (97 RON)</option>
+                <option>Diesel (B5)</option>
+                <option>Diesel (Euro 5)</option>
+                <option>Gasoline (Regular 87)</option>
+                <option>Gasoline (Premium 93)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Quantity (Litres)</label>
+              <input type="number" placeholder="e.g. 20" min="5" max="100" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Delivery Type</label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="delivery" value="asap" checked />
+                <span><i class="fas fa-bolt"></i> ASAP (~30 min)</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="delivery" value="scheduled" />
+                <span><i class="fas fa-calendar"></i> Scheduled</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="delivery" value="emergency" />
+                <span><i class="fas fa-exclamation"></i> Emergency SOS</span>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Special Notes (Optional)</label>
+            <textarea rows="3" placeholder="e.g. I'm on NH44 near Km marker 214, silver Toyota Camry..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-gas-pump"></i> Place Order
+          </button>
+          <p class="form-note">* You'll receive SMS confirmation with driver details and live tracking link.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Transparent Pricing</span>
+        <h2 class="section-title">Simple <span class="accent">Pricing</span></h2>
+        <p class="section-desc">Market-rate fuel price + small delivery fee. No hidden charges, ever.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="plan-name">Standard</div>
+          <div class="plan-icon">⚡</div>
+          <div class="plan-price">₹49<span>/delivery</span></div>
+          <p class="plan-desc">For one-off deliveries when you need fuel fast.</p>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> Up to 30 litres</li>
+            <li><i class="fas fa-check"></i> Delivery in ~30 mins</li>
+            <li><i class="fas fa-check"></i> All fuel types</li>
+            <li><i class="fas fa-check"></i> Real-time tracking</li>
+            <li class="disabled"><i class="fas fa-times"></i> Priority dispatch</li>
+            <li class="disabled"><i class="fas fa-times"></i> Dedicated support</li>
+          </ul>
+          <a href="#order" class="btn btn-outline">Get Started</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="plan-badge">Best Value</div>
+          <div class="plan-name">Pro</div>
+          <div class="plan-icon">🔥</div>
+          <div class="plan-price">₹599<span>/month</span></div>
+          <p class="plan-desc">Unlimited deliveries with priority service.</p>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> Unlimited deliveries</li>
+            <li><i class="fas fa-check"></i> Up to 50 litres/delivery</li>
+            <li><i class="fas fa-check"></i> Priority dispatch (15 min)</li>
+            <li><i class="fas fa-check"></i> Scheduled deliveries</li>
+            <li><i class="fas fa-check"></i> 24/7 phone support</li>
+            <li><i class="fas fa-check"></i> Digital invoices</li>
+          </ul>
+          <a href="#order" class="btn btn-primary">Subscribe Now</a>
+        </div>
+        <div class="pricing-card">
+          <div class="plan-name">Fleet</div>
+          <div class="plan-icon">🚛</div>
+          <div class="plan-price">Custom</div>
+          <p class="plan-desc">Custom plans for businesses and vehicle fleets.</p>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> Unlimited fleet vehicles</li>
+            <li><i class="fas fa-check"></i> Bulk pricing discounts</li>
+            <li><i class="fas fa-check"></i> Account manager</li>
+            <li><i class="fas fa-check"></i> Monthly invoicing</li>
+            <li><i class="fas fa-check"></i> Usage analytics</li>
+            <li><i class="fas fa-check"></i> API integration</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Contact Sales</a>
+        </div>
+      </div>
+      <p class="pricing-note">* Fuel price charged at current market rates. Delivery fee is flat per service. GST applicable.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Real Stories</span>
+        <h2 class="section-title">What Our <span class="accent">Customers</span> Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"I ran out of fuel on NH48 at midnight. PetroPal had a driver at my location in 22 minutes. Absolute lifesaver. 10/10 would recommend!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RK</div>
+            <div><strong>Rajan Kumar</strong><span>Bangalore</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"I use the Pro plan. Every morning my car is full when I leave for work. I haven't visited a petrol station in 4 months. Complete game changer!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SA</div>
+            <div><strong>Sunita Agarwal</strong><span>Delhi</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Our delivery fleet uses PetroPal's corporate plan. Saves us 3–4 hours per day that drivers used to waste at petrol pumps. The ROI is incredible."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">VP</div>
+            <div><strong>Vikram Patel</strong><span>Mumbai — FleetCo</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-wrapper">
+        <div class="about-visual">
+          <div class="about-card-stack">
+            <div class="about-card ac-1"><i class="fas fa-shield-alt"></i><span>Safety First</span></div>
+            <div class="about-card ac-2"><i class="fas fa-award"></i><span>Certified Fuel</span></div>
+            <div class="about-card ac-3"><i class="fas fa-heart"></i><span>50k+ Drivers</span></div>
+            <div class="about-big-num">2021</div>
+            <p class="about-since">Est.</p>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-tag">Our Story</span>
+          <h2>Fuel Delivery, <span class="accent">Reimagined.</span></h2>
+          <p>PetroPal was born out of a frustrating midnight experience — our founder ran dry on a remote highway with no pump in sight. He spent hours waiting for help and thought: <em>"There has to be a better way."</em></p>
+          <p>Since 2021, we've been building the infrastructure to make on-demand fuel delivery a reality across India and beyond. From solo travelers to large corporate fleets — we're here to keep the world moving.</p>
+          <div class="about-values">
+            <div class="value">
+              <i class="fas fa-bolt"></i>
+              <div><strong>Speed</strong><span>We obsess over delivery time. Our average is under 30 minutes.</span></div>
+            </div>
+            <div class="value">
+              <i class="fas fa-leaf"></i>
+              <div><strong>Sustainability</strong><span>Our routing algorithm minimizes fuel waste in our own deliveries.</span></div>
+            </div>
+            <div class="value">
+              <i class="fas fa-handshake"></i>
+              <div><strong>Trust</strong><span>All drivers are background-verified and certified fuel handlers.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APP BANNER -->
+  <section class="app-banner">
+    <div class="container">
+      <div class="app-content">
+        <div class="app-text">
+          <h2>Fuel Delivery in <span class="accent">Your Pocket</span></h2>
+          <p>Download the PetroPal app for a faster ordering experience, push notifications, live tracking and exclusive app-only discounts.</p>
+          <div class="app-buttons">
+            <a href="#" class="app-btn">
+              <i class="fab fa-apple"></i>
+              <div><small>Download on the</small><strong>App Store</strong></div>
+            </a>
+            <a href="#" class="app-btn">
+              <i class="fab fa-google-play"></i>
+              <div><small>Get it on</small><strong>Google Play</strong></div>
+            </a>
+          </div>
+        </div>
+        <div class="app-mockup">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="app-ui-header">⛽ PetroPal</div>
+              <div class="app-ui-map">
+                <div class="app-map-truck">🚛</div>
+                <div class="app-map-pulse"></div>
+              </div>
+              <div class="app-ui-status"><span class="status-dot"></span> Driver on the way · 18 min</div>
+              <div class="app-ui-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="accent">Us</span></h2>
+        <p class="section-desc">Questions, partnerships or feedback — we'd love to hear from you.</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div><strong>Call Us</strong><span>+91 9605680232</span><small>24/7 support available</small></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div><strong>Email Us</strong><span>muhdjesinpm@gmail.com</span><small>We reply within 2 hours</small></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div><strong>Headquarters</strong><span>PetroPal Technologies Pvt Ltd</span><small>Bengaluru, Karnataka, India</small></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-headset"></i></div>
+            <div><strong>Live Chat</strong><span>Available on app &amp; website</span><small>Avg. response: under 5 min</small></div>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <select>
+              <option>General Inquiry</option>
+              <option>Order Issue</option>
+              <option>Corporate / Fleet Plans</option>
+              <option>Partnership</option>
+              <option>Feedback</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Tell us how we can help you..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked <span class="accent">Questions</span></h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">Is PetroPal available in my city?<i class="fas fa-plus"></i></button>
+          <div class="faq-answer"><p>We currently operate in Bangalore, Mumbai, Delhi, Chennai, Hyderabad, Pune and 20+ other cities. Enter your pincode in the order form to check availability.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">How long does delivery really take?<i class="fas fa-plus"></i></button>
+          <div class="faq-answer"><p>Our average delivery time is 28 minutes. Emergency SOS orders receive priority dispatch and typically arrive within 20 minutes.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Is it safe to have fuel delivered?<i class="fas fa-plus"></i></button>
+          <div class="faq-answer"><p>Absolutely. All our drivers are trained, certified fuel handlers. We use government-approved sealed containers and spill-proof nozzle systems, fully compliant with Petroleum Act regulations.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What payment methods do you accept?<i class="fas fa-plus"></i></button>
+          <div class="faq-answer"><p>We accept all major credit/debit cards, UPI (GPay, PhonePe, Paytm), net banking and PetroPal wallet credits. Cash is also accepted in select areas.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Can I order fuel for someone else's car?<i class="fas fa-plus"></i></button>
+          <div class="faq-answer"><p>Yes! You can order for any vehicle at any location. Just enter the delivery address where the vehicle is parked — great for helping stranded friends or family.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo"><span class="logo-icon">⛽</span><span>Petro<span class="accent">Pal</span></span></a>
+          <p>On-demand fuel delivery for everyone, everywhere. Never run dry again.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Petrol Delivery</a></li>
+            <li><a href="#services">Diesel Delivery</a></li>
+            <li><a href="#services">Emergency Rescue</a></li>
+            <li><a href="#services">Scheduled Refueling</a></li>
+            <li><a href="#services">Fleet &amp; Corporate</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press Kit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Safety Info</a></li>
+            <li><a href="#">Partner With Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 PetroPal Technologies Pvt Ltd. All rights reserved.</p>
+        <p>Made with ❤️ for drivers everywhere.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING SOS BUTTON -->
+  <a href="#order" class="sos-btn" title="Emergency Fuel SOS">
+    <i class="fas fa-exclamation-triangle"></i><span>SOS</span>
+  </a>
+
+  <!-- SUCCESS MODAL -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <div class="modal-icon">✅</div>
+      <h3>Order Placed!</h3>
+      <p>Your fuel is on the way. You'll receive an SMS with your driver's details and a live tracking link shortly.</p>
+      <button class="btn btn-primary" onclick="closeModal()">Got it!</button>
+    </div>
+  </div>
+
+
+  <!-- ===== LOGIN / SIGNUP MODAL ===== -->
+  <div class="modal-overlay" id="authModal">
+    <div class="modal auth-modal">
+      <button class="modal-close" id="closeAuthModal" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="tabLogin">Login</button>
+        <button class="auth-tab" id="tabSignup">Sign Up</button>
+      </div>
+
+      <!-- LOGIN FORM -->
+      <form class="auth-form" id="loginForm">
+        <div class="auth-header">
+          <span class="logo-icon">⛽</span>
+          <h3>Welcome back</h3>
+          <p>Login to your PetroPal account</p>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="loginEmail" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <div class="input-icon-wrap">
+            <input type="password" id="loginPassword" placeholder="Enter your password" required class="input-with-icon" style="padding-left:16px!important;padding-right:48px!important;" />
+            <button type="button" class="gps-btn toggle-pw" data-target="loginPassword"><i class="fas fa-eye"></i></button>
+          </div>
+        </div>
+        <div class="auth-forgot"><a href="#">Forgot password?</a></div>
+        <button type="submit" class="btn btn-primary btn-full">Login <i class="fas fa-arrow-right"></i></button>
+        <p class="auth-switch">Don't have an account? <a href="#" id="goSignup">Sign up free</a></p>
+      </form>
+
+      <!-- SIGNUP FORM -->
+      <form class="auth-form" id="signupForm" style="display:none;">
+        <div class="auth-header">
+          <span class="logo-icon">⛽</span>
+          <h3>Create Account</h3>
+          <p>Join thousands of drivers on PetroPal</p>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" id="signupFirst" placeholder="John" required />
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" id="signupLast" placeholder="Smith" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" id="signupPhone" placeholder="+91 98765 43210" required />
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="signupEmail" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <div class="input-icon-wrap">
+            <input type="password" id="signupPassword" placeholder="Create a password" required class="input-with-icon" style="padding-left:16px!important;padding-right:48px!important;" />
+            <button type="button" class="gps-btn toggle-pw" data-target="signupPassword"><i class="fas fa-eye"></i></button>
+          </div>
+        </div>
+        <div class="form-group auth-terms">
+          <label class="radio-option" style="cursor:pointer;">
+            <input type="checkbox" id="agreeTerms" required style="display:inline-block;width:auto;margin-right:6px;" />
+            <span style="border:none;background:none;padding:0;color:var(--gray-light);font-size:13px;">I agree to the <a href="#" style="color:var(--orange);">Terms of Service</a></span>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Create Account <i class="fas fa-arrow-right"></i></button>
+        <p class="auth-switch">Already have an account? <a href="#" id="goLogin">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
